@@ -2,20 +2,31 @@ name: Build and deploy Jekyll site
 
 on:
   push:
-    branches: [ main ]
+    branches: [ main ]  # or master, depending on your default branch
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-ruby@v1
+      
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.2'
-      - run: |
-          gem install bundler
+          bundler-cache: true
+      
+      - name: Install Dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y imagemagick python3-pip
+          pip3 install jupyter
+      
+      - name: Build the site
+        run: |
           bundle install
           bundle exec jekyll build
+      
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
