@@ -1,4 +1,4 @@
-name: Build and Deploy Al-Folio
+name: Build and Deploy Site
 
 on:
   push:
@@ -24,11 +24,11 @@ jobs:
           gem install bundler
           bundle install
 
-      - name: Install ImageMagick
-        run: sudo apt-get update && sudo apt-get install -y imagemagick
-
-      - name: Install Jupyter
-        run: pip install notebook
+      - name: Install ImageMagick and Jupyter
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y imagemagick
+          pip install notebook
 
       - name: Build site
         run: bundle exec jekyll build
@@ -37,5 +37,4 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: gh-pages
           publish_dir: ./_site
