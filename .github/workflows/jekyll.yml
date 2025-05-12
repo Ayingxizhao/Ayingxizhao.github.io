@@ -2,22 +2,22 @@ name: Build and deploy Jekyll site
 
 on:
   push:
-    branches: [ main ]  # or master, depending on your default branch
+    branches: [ main ]
 
 jobs:
-  github-pages:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      
-      - uses: actions/cache@v4
+      - uses: actions/setup-ruby@v1
         with:
-          path: vendor/bundle
-          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-gems-
-            
-      - uses: helaili/jekyll-action@v2
+          ruby-version: '3.2'
+      - run: |
+          gem install bundler
+          bundle install
+          bundle exec jekyll build
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          jekyll_src: '.'
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site
