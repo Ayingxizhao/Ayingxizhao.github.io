@@ -1,11 +1,11 @@
 ---
 layout: page
-title: project 1
+title: Birth Order, Gender Attitudes, and Educational Attainment:Evidence from Immigrant Families in the US,
 description: with background image
-img: assets/img/12.jpg
+img: assets/img/coefficient_plot.pdf
 importance: 1
 category: work
-related_publications: true
+related_publications: false
 ---
 
 Every project has a beautiful feature showcase page.

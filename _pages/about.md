@@ -27,6 +27,6 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Andrew Y. Zhao is a current M.S. in Data Science student at Harvard University. His research interests are in human-computer interaction (HCI) and data privacy. He studies how interactive systems can better align with people’s real-world expectations and value systems. His recent work focuses on educational privacy methods, including interactive system design and usability evaluation, and has been published in top venues such as the *IEEE Symposium on Security and Privacy*.
+Andrew Y. Zhao is a current **M.S. in Data Science student at Harvard University**. His research interests are in human-computer interaction (HCI) and data privacy. He studies how interactive systems can better align with people’s real-world expectations and value systems. His recent work focuses on educational privacy methods, including interactive system design and usability evaluation, and has been published in top venues such as the *IEEE Symposium on Security and Privacy*.
 
-Before his M.S. studies, Andrew earned a B.S. in Data Science and a B.A. in Economics from the University of California, San Diego. He is now pursuing research at the intersection of machine learning systems, privacy, and technological adaptation, with emphasis on usability, personalization, and collective privacy concerns in digital systems.
+Before his M.S. studies, Andrew earned a **B.S. in Data Science and a B.A. in Economics with Highest Distinction from the University of California, San Diego**. He is now pursuing research at the intersection of machine learning systems, privacy, and technological adaptation, with emphasis on usability, personalization, and collective privacy concerns in digital systems.
