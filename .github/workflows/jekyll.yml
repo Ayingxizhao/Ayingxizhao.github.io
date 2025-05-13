@@ -1,4 +1,4 @@
-name: Build and deploy Jekyll site
+name: Deploy Jekyll site to Pages
 on:
   push:
     branches: [main] # or master, depending on your default branch
