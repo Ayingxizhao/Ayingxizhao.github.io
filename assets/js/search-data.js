@@ -141,11 +141,11 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/announcement_2/";
-            },},{id: "news-our-work-teaching-data-science-students-to-sketch-privacy-designs-through-heuristics-has-been-accepted-to-ieee-symposium-on-security-and-privacy-tada",
+            },},{id: "news-our-work-teaching-data-science-students-to-sketch-privacy-designs-through-heuristics-has-been-accepted-to-ieee-symposium-on-security-and-privacy-acceptance-rate-14-8-tada",
           title: 'Our work “Teaching Data Science Students to Sketch Privacy Designs through Heuristics” has...',
           description: "",
-          section: "News",},{id: "projects-project-1",
-          title: 'project 1',
+          section: "News",},{id: "projects-birth-order-gender-attitudes-and-educational-attainment-evidence-from-immigrant-families-in-the-us",
+          title: 'Birth Order, Gender Attitudes, and Educational Attainment:Evidence from Immigrant Families in the US,...',
           description: "with background image",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
