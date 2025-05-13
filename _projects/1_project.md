@@ -1,25 +1,12 @@
 ---
 layout: page
-title: Birth Order, Gender Attitudes, and Educational Attainment:Evidence from Immigrant Families in the US,
-description: with background image
+title: Birth Order, Gender Attitudes, and Educational Attainment
+description: This paper investigates how birth order and cultural attitudes interact to shape educational attainment in immigrant families using data from the Panel Study of Income Dynamics (1999-2021) and the World Values Survey.
 img: assets/img/coefficient_plot.pdf
 importance: 1
-category: work
+category: Economics
 related_publications: false
 ---
-
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
-
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
-
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
