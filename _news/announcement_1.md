@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2015-10-22 15:59:00-0400
+date: 2025-03-10 11:00
 inline: true
 related_posts: false
 ---
 
-A simple inline announcement.
+Our work **"Teaching Data Science Students to Sketch Privacy Designs through Heuristics"** has been accepted to *IEEE symposium on security and privacy*. :tada:
