@@ -23,34 +23,3 @@ $max-content-width: {{ site.max_width }};
   "tabler-icons/tabler-icons-filled.scss",
   "tabler-icons/tabler-icons-outline.scss"
 ;
-
-<style>
-.pdf-container {
-  margin-top: 30px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  overflow: hidden;
-}
-
-.pdf-actions {
-  display: flex;
-  gap: 15px;
-  margin: 15px 0;
-}
-
-.download-button, .view-button {
-  display: inline-flex;
-  align-items: center;
-  padding: 8px 12px;
-  background-color: #0366d6;
-  color: white;
-  text-decoration: none;
-  border-radius: 4px;
-  font-weight: 500;
-  transition: background-color 0.2s;
-}
-
-.download-button:hover, .view-button:hover {
-  background-color: #0256b9;
-}
-</style>
