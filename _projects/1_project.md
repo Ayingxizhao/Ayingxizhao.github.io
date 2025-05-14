@@ -17,5 +17,3 @@ This paper investigates how birth order and cultural attitudes interact to shape
 I find that **firstborn males complete 1.46 more years of education than their later-born brothers**, representing 0.64 standard deviations of educational attainment. While **firstborn daughters in families with relatively more progressive gender attitudes gain an additional 0.6 years of education** beyond the male firstborn premium, **this advantage disappears in families with traditional attitudes**. 
 
 These patterns persist after accounting for family fixed effects and potential fertility-based selection, suggesting that **cultural attitudes can override typically beneficial birth order effects**. The results highlight how traditional gender norms moderate the relationship between birth order and educational investment in immigrant families.
-
-{% endraw %}
