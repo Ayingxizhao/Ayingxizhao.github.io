@@ -19,13 +19,13 @@ I find that **firstborn males complete 1.46 more years of education than their l
 These patterns persist after accounting for family fixed effects and potential fertility-based selection, suggesting that **cultural attitudes can override typically beneficial birth order effects**. The results highlight how traditional gender norms moderate the relationship between birth order and educational investment in immigrant families.
 
 <div style="margin-top: 30px; border: 1px solid #ddd; border-radius: 4px; overflow: hidden;">
-  <div style="display: flex; gap: 15px; margin: 15px 0;">
+  <div style="display: flex; gap: 15px; margin: 15px 0; padding-left: 15px;">
     <a href="assets/pdf/birth.pdf" style="display: inline-flex; align-items: center; padding: 8px 12px; background-color: #0366d6; color: white; text-decoration: none; border-radius: 4px; font-weight: 500;" download>
       <i class="fa fa-download"></i> Download Paper
     </a>
     
-    <a href="assets/pdf/birth.pdf" style="display: inline-flex; align-items: center; padding: 8px 12px; background-color: #0366d6; color: white; text-decoration: none; border-radius: 4px; font-weight: 500;" target="_blank">
-      <i class="fa fa-eye"></i> Open in New Tab
+    <a href="https://ayingxizhao.github.io/assets/pdf/birth.pdf" style="display: inline-flex; align-items: center; padding: 8px 12px; background-color: #0366d6; color: white; text-decoration: none; border-radius: 4px; font-weight: 500;" target="_blank">
+        <i class="fa fa-eye"></i> Open in New Tab
     </a>
   </div>
   
