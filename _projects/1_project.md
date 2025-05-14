@@ -29,5 +29,5 @@ These patterns persist after accounting for family fixed effects and potential f
     </a>
   </div>
   
-  <embed src="assets/pdf/birth.pdf" type="application/pdf" width="100%" height="600px" />
+  <iframe src="https://docs.google.com/viewer?url=https://ayingxizhao.github.io/assets/pdf/birth.pdf&embedded=true" width="100%" height="600px" frameborder="0"></iframe>
 </div>
