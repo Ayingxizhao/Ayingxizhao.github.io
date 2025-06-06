@@ -2,7 +2,7 @@
 layout: page
 title: Birth Order, Gender Attitudes, and Educational Attainment
 description: This paper investigates how birth order and cultural attitudes interact to shape educational attainment in immigrant families using data from the Panel Study of Income Dynamics (1999-2021) and the World Values Survey.
-img: assets/img/coefficient_plot.pdf
+img: assets/img/coefficient_plot.png
 importance: 1
 category: Economics
 related_publications: false
