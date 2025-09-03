@@ -4,4 +4,7 @@ github_users:
 repo_description_lines_max: 2
 
 github_repos:
+  - Ayingxizhao/GENZ-ContentGuard-AI
+  - Ayingxizhao/job_status_monitoring
+  - Ayingxizhao/education-disparity-dashboard
   - Ayingxizhao/dsc180_b08
