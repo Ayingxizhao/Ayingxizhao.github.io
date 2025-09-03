@@ -4,7 +4,7 @@ title: GENZ ContentGuard AI
 description: AI-powered malicious content detection system optimized for Gen Z language patterns and internet slang
 img: assets/img/contentguard_ai.png
 importance: 1
-category: AI/ML
+category: work
 related_publications: false
 ---
 
