@@ -77,6 +77,7 @@ GENZ ContentGuard AI is an advanced machine learning system designed to detect a
     }
   }
 }
+```
 
 **Made with ❤️ for a safer internet**
 
