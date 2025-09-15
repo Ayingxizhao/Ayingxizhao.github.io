@@ -119,6 +119,11 @@ ninja.data = [{
           description: "This paper investigates how birth order and cultural attitudes interact to shape educational attainment in immigrant families using data from the Panel Study of Income Dynamics (1999-2021) and the World Values Survey.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
+            },},{id: "projects-macos-cache-manager",
+          title: 'MacOS Cache Manager',
+          description: "A cache management walis appplication designed for MacOS",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/cache_software/";
             },},{id: "projects-genz-contentguard-ai",
           title: 'GENZ ContentGuard AI',
           description: "AI-powered malicious content detection system optimized for Gen Z language patterns and internet slang",
