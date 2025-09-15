@@ -2,7 +2,7 @@
 layout: page
 title: MacOS Cache Manager
 description: A cache management walis appplication designed for MacOS
-img: assets/img/cache
+img: assets/img/cache.png
 importance: 1
 category: Software Eng
 related_publications: false
