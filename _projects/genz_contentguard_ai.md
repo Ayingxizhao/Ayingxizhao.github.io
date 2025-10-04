@@ -22,7 +22,7 @@ GENZ ContentGuard AI is an advanced machine learning system designed to detect a
       <i class="fab fa-github"></i> View Source Code
     </a>
     
-    <a href="https://genz-contentguard-ai.onrender.com/" style="display: inline-flex; align-items: center; padding: 8px 12px; background-color: #28a745; color: white; text-decoration: none; border-radius: 4px; font-weight: 500;" target="_blank">
+    <a href="https://genzlang-production.up.railway.app/" style="display: inline-flex; align-items: center; padding: 8px 12px; background-color: #28a745; color: white; text-decoration: none; border-radius: 4px; font-weight: 500;" target="_blank">
         <i class="fas fa-external-link-alt"></i> Live Demo
     </a>
   </div>
