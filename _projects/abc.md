@@ -1,15 +1,12 @@
 ---
 layout: page
-title: AI Background Music Composer
+title: 🎵 AI Background Music Composer
 description: End-to-end AI system that generates custom background music tailored to video content
 img: assets/img/abg.gif
 importance: 1
 category: AI
 related_publications: false
 ---
-
-## 🎵 AI Background Music Composer
-
 > Automatically generate custom background music for your videos
 
 ABC is an end-to-end multi-modal AI system that analyzes video content and generates tailored background music. Upload a video, and our system will understand the scenes, objects, and emotions to create the perfect musical accompaniment.
@@ -38,7 +35,7 @@ ABC is an end-to-end multi-modal AI system that analyzes video content and gener
 ---
 ## Motivation
 Short-form platforms like TikTok, YouTube Shorts, and Instagram Reels have made background music a core part of storytelling. The right soundtrack enhances mood, pacing, and emotional impact.
-![social media platforms](/assets/img/social.webp)
+<img src="/assets/img/social.webp" alt="social media platforms" style="width: 100%; height: auto; max-width: 100%;">
 
 Yet creators still struggle with:
 - Repetitive, overused music libraries
