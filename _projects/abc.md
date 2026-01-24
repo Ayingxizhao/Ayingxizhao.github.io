@@ -21,112 +21,94 @@ ABC is an end-to-end multi-modal AI system that analyzes video content and gener
     <a href="https://github.com/Ayingxizhao/AI-Background-Music-Composer" style="display: inline-flex; align-items: center; padding: 8px 12px; background-color: #0366d6; color: white; text-decoration: none; border-radius: 4px; font-weight: 500;" target="_blank">
       <i class="fab fa-github"></i> View Source Code
     </a>
+    <a href="https://youtu.be/URD2uU_u73k" style="display: inline-flex; align-items: center; padding: 8px 12px; background-color: #ff0000; color: white; text-decoration: none; border-radius: 4px; font-weight: 500;" target="_blank">
+      <i class="fab fa-youtube"></i> Watch Demo
+    </a>
   </div>
+</div>
+
+<div style="margin-top: 20px; position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
+  <iframe src="https://www.youtube.com/embed/URD2uU_u73k?autoplay=1&mute=1" 
+          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen>
+  </iframe>
 </div>
 
 ---
 ## Motivation
 Short-form platforms like TikTok, YouTube Shorts, and Instagram Reels have made background music a core part of storytelling. The right soundtrack enhances mood, pacing, and emotional impact.
-![social media platforms](assets/img/social.webp)
+![social media platforms](/assets/img/social.webp)
 
-```
-Google Kubernetes Engine (GKE)
-├── Namespace: music-gen
-│   ├── API Gateway (1-10 pods)
-│   ├── Qwen3 Worker (1-20 pods)
-│   └── Prompt Gen Workers (1-15 pods)
-└── External Services:
-    ├── MongoDB Atlas (job queue & metadata)
-    ├── Hugging Face Inference Endpoint (Qwen3-VL-2B)
-    ├── Vertex AI (Lyria music generation)
-    ├── OpenAI (GPT-4o)
-    └── Google Cloud Storage
-```
+Yet creators still struggle with:
+- Repetitive, overused music libraries
+- Strict licensing rules and the fear of copyright strikes
+- Difficulty standing out when everyone uses the same trending audio
+- Hours wasted searching for a track that "kind of" fits
 
-### AI/ML Pipeline
-1. **Video Analysis** - Qwen3-VL-2B understands scenes, objects, and emotions
-2. **Prompt Generation** - GPT-4o transforms analysis into rich music prompts
-3. **Music Synthesis** - Vertex AI Lyria generates high-quality background music
+Instead of focusing on editing or storytelling, many creators end up stuck browsing playlists — slowing down the creative process in an already saturated landscape.
 
----
+## Solution
+Our AI Background Music Composer creates custom soundtracks based on:
 
-## � Quick Start
+- The video you upload
+- Your musical preferences (style, instruments, BPM)
 
-### Prerequisites
-- Google Cloud project with billing enabled
-- MongoDB Atlas cluster with X.509 authentication
-- Hugging Face Inference Endpoint running Qwen3-VL-2B
-- OpenAI API key (GPT-4o)
-- Vertex AI project with Lyria enabled
+### How it works
 
-### Local Development
+**Video Understanding**  
+A fine-tuned VLM analyzes visual cues — motion, color dynamics, scene transitions — to capture the rhythm and emotion of the footage.
 
-```bash
-# Clone the repository
-git clone https://github.com/Ayingxizhao/AI-Background-Music-Composer.git
-cd AI-Background-Music-Composer
+**Preference Blending**  
+Users choose their desired vibe: lofi chill, cinematic orchestral, groovy electronic, etc.
 
-# Set up environment variables
-cp .env.example .env
-# Edit .env with your API keys
+**Music Generation**  
+A neural audio model composes original melodies and rhythms, aligning beats with visual transitions for a seamless feel.
 
-# Run backend services
-uvicorn src.api_gateway.main:app --reload
-uvicorn src.qwen3_worker.main:app --reload
-uvicorn src.prompt_gen_worker.main:app --reload
+## The experience
+Upload -> adjust a few sliders -> preview your soundtrack.
+A handcrafted vibe, delivered by AI in under two minutes.
 
-# Run frontend
-cd frontend
-npm install
-npm run dev
-```
+## Technical Approach
+_A multi-model pipeline designed for scalability, precision, and real-time usability._
+1. **Video → Description (Qwen3–2B VLM)**
+   - Fine-tuned on the MIRADATA YouTube dataset
+   - Outputs compact semantic descriptions of the video
 
----
+2. **Description + Preferences → Prompt (music_gen_prompter LLM)**
+   - Structures user preferences + VLM output
+   - Produces an optimized prompt for music generation
 
-## ✨ Features
+3. **Prompt → Music (Lyria 2)**
+   - Generates the final BGM track tailored to video pacing and mood
 
-### 🎥 Video Processing
-- **Upload** - Direct browser upload to Google Cloud Storage
-- **Analysis** - Scene, object, and emotion understanding via Qwen3-VL-2B
-- **Frame Sampling** - Smart frame sampling for efficient processing
+## Infrastructure
+To ensure performance and reliability:
 
-### � Music Generation
-- **Custom Creation** - Tailored background music based on video content
-- **Multiple Styles** - Support for various moods and genres
-- **Regeneration** - Create multiple variations with different settings
+- Docker for containerization
+- Kubernetes for scalable orchestration
+- Docker Compose to keep services isolated and fault-tolerant
+- GitHub Actions for CI/CD
+- DVC for dataset versioning & automated retraining
+- REST APIs bridging models and front end
+- AWS deployment powering cloud-based generation
+- The final product is a responsive, lightweight web app that delivers music anywhere.
 
-### 📊 Real-time Updates
-- **WebSocket** - Live job progress updates
-- **Status Tracking** - Monitor processing stages
-- **Download Options** - Export audio (WAV) or video with music (MP4)
 
-### ⚙️ Technical Features
-- **Auto-scaling** - Kubernetes-based horizontal scaling
-- **Cost-optimized** - Scales down when idle, no self-managed GPUs
-- **Fault-tolerant** - Retry mechanisms and robust error handling
-- **CI/CD** - Automated testing and deployment via GitHub Actions
+## Impact
+Our system doesn’t just help creators — it can reshape workflows across the entire video ecosystem.
 
----
+### For Platforms
+#### Benefits
+* Integrates directly into editing software, mobile apps, or short-video platforms
+* Enables real-time, adaptive soundtrack generation inside the creator’s workflow
+* Replaces static libraries with endless AI-generated alternatives
+* Creates richer, more diverse audio ecosystems
 
-## 💻 Technology Stack
+### For Creators
+#### Benefits
+* Removes financial and technical barriers to professional-quality music
+* Eliminates copyright uncertainty
+* Expands creative flexibility through personalized soundtracks
 
-### Backend
-- **Language/Framework**: Python, FastAPI (async)
-- **Services**: API Gateway, Qwen3 Worker, Prompt Gen Worker
-- **Database**: MongoDB Atlas (job queue + metadata)
-- **Storage**: Google Cloud Storage
-- **Orchestration**: Google Kubernetes Engine (GKE)
-
-### Frontend
-- **Framework**: React 18 + TypeScript
-- **Build**: Vite
-- **Styling**: Tailwind CSS + Radix UI
-- **Real-time**: WebSocket for job updates
-- **Deployment**: Vercel
-
-### AI/ML
-- **Vision Model**: Qwen3-VL-2B (Hugging Face Inference)
-- **Language Model**: GPT-4o (OpenAI)
-- **Music Generation**: Lyria (Vertex AI)
-
----
+By making music adapt to video — rather than forcing creators to adapt to limited libraries — we move toward a future where audio is as dynamic and expressive as the visuals it supports.
