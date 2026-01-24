@@ -120,7 +120,7 @@ ninja.data = [{
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
             },},{id: "projects-ai-background-music-composer",
-          title: 'AI Background Music Composer',
+          title: '🎵 AI Background Music Composer',
           description: "End-to-end AI system that generates custom background music tailored to video content",
           section: "Projects",handler: () => {
               window.location.href = "/projects/abc/";
