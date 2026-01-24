@@ -2,7 +2,7 @@
 layout: page
 title: AI Background Music Composer
 description: End-to-end AI system that generates custom background music tailored to video content
-img: assets/img/ABG.png
+img: assets/img/abg.gif
 importance: 1
 category: AI
 related_publications: false
