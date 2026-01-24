@@ -7,9 +7,7 @@ importance: 1
 category: AI
 related_publications: false
 ---
-> Automatically generate custom background music for your videos
-
-ABC is an end-to-end multi-modal AI system that analyzes video content and generates tailored background music. Upload a video, and our system will understand the scenes, objects, and emotions to create the perfect musical accompaniment.
+> ABC is an end-to-end multi-modal AI system that analyzes video content and generates tailored background music. Upload a video, and our system will understand the scenes, objects, and emotions to create the perfect musical accompaniment.
 
 ## 🔗 Project Links
 
