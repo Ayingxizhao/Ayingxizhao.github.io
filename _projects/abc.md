@@ -25,10 +25,9 @@ ABC is an end-to-end multi-modal AI system that analyzes video content and gener
 </div>
 
 ---
-
-## 🏗️ System Architecture
-
-ABC uses a cloud-native, auto-scaling architecture deployed on Google Kubernetes Engine (GKE):
+## Motivation
+Short-form platforms like TikTok, YouTube Shorts, and Instagram Reels have made background music a core part of storytelling. The right soundtrack enhances mood, pacing, and emotional impact.
+![social media platforms](assets/img/social.webp)
 
 ```
 Google Kubernetes Engine (GKE)
