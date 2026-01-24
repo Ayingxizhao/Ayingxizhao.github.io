@@ -2,6 +2,7 @@
 layout: page
 title: projects
 permalink: /projects/
+description: a collection of my projects.
 nav: true
 nav_order: 3
 display_categories: [AI, Software Eng, Economics, Fun]
